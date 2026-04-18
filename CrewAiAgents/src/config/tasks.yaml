@@ -1,0 +1,20 @@
+# define tasks
+
+research_attack_task:
+  description: >
+    Take the identified cyber attack type from the analysis agent: {attack_type}.
+    Explain what this attack is, how it works, and why it is dangerous.
+    Break down the explanation so that a non-technical user can easily understand it.
+    Include real-world examples if helpful.
+  expected_output: >
+    A clear, easy-to-understand explanation of the attack, including what it does,
+    how it affects systems or users, and why it is a threat.
+
+response_action_task:
+  description: >
+    Based on the detected attack {attack_type} and the explanation provided,
+    generate practical steps the user should take to protect themselves.
+    Include both immediate actions and long-term prevention strategies.
+  expected_output: >
+    A list of clear, actionable recommendations that help the user respond to
+    and prevent the attack, written in simple language.
